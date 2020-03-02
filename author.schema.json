@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://espositoandrea.github.io/adpt-document-schema/author.schema.json",
+    "title": "AsciiDoc Author",
+    "description": "An Author as seen by the AsciiDoc Publishing Toolbox",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The author name",
+            "type": "string"
+        },
+        "surname": {
+            "description": "The author surname",
+            "type": "string"
+        },
+        "middlename": {
+            "description": "The author middlename",
+            "type": "string"
+        },
+        "email": {
+            "description": "The author email",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "surname"
+    ]
+}
