@@ -1,2 +1,4 @@
 plugins:
   - jekyll-titles-from-headings
+
+theme: jekyll-theme-cayman
