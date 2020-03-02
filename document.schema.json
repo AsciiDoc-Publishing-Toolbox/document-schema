@@ -21,7 +21,9 @@
     "authors": {
       "description": "The authors of the document",
       "type": "array",
-      "$ref": "http://espositoandrea.github.io/adpt-document-schema/author.schema.json",
+      "items": {
+        "$ref": "http://espositoandrea.github.io/adpt-document-schema/author.schema.json"
+      },
       "uniqueItems": true
     },
     "version": {
