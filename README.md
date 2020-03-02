@@ -1,0 +1,5 @@
+---
+permalink: /
+---
+
+# ADPT Document Schema
