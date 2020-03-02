@@ -23,87 +23,86 @@
       "type": "array",
       "$ref": "http://espositoandrea.github.io/adpt-document-schema/author.schema.json",
       "uniqueItems": true
-    }
-  },
-  "version": {
-    "description": "The document's version/edition",
-    "type": "object",
-    "properties": {
-      "number": {
-        "description": "The version number",
-        "type": "string"
-      },
-      "date": {
-        "description": "The version date",
-        "type": "string"
-      },
-      "note": {
-        "description": "A note about the version",
-        "type": "string"
-      }
     },
-    "required": [
-      "number"
-    ]
-  },
-  "chapters": {
-    "description": "The document chapters",
-    "type": "array",
-    "minItems": 1,
-    "items": {
+    "version": {
+      "description": "The document's version/edition",
       "type": "object",
       "properties": {
-        "title": {
-          "description": "The chapter title. It will be used to generate a file name",
+        "number": {
+          "description": "The version number",
           "type": "string"
         },
-        "part": {
-          "description": "Whether or not the chapter should be treated as a part",
-          "type": "boolean",
-          "default": false
+        "date": {
+          "description": "The version date",
+          "type": "string"
+        },
+        "note": {
+          "description": "A note about the version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number"
+      ]
+    },
+    "chapters": {
+      "description": "The document chapters",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "description": "The chapter title. It will be used to generate a file name",
+            "type": "string"
+          },
+          "part": {
+            "description": "Whether or not the chapter should be treated as a part",
+            "type": "boolean",
+            "default": false
+          }
         }
       }
+    },
+    "lang": {
+      "description": "The document language (IANA subtag)",
+      "type": "string",
+      "default": "en"
+    },
+    "copyright": {
+      "description": "The document copyright notice",
+      "type": "object",
+      "properties": {
+        "fromYear": {
+          "description": "The starting year for the copyright notice",
+          "type": "number"
+        },
+        "toYear": {
+          "description": "The ending year for the copyright notice",
+          "type": "number"
+        },
+        "holder": {
+          "description": "The copyright holder",
+          "type": "string"
+        },
+        "text": {
+          "description": "The copyright main text. This text is treated as pure AsciiDoc",
+          "type": "string"
+        },
+        "adptNotice": {
+          "description": "Whether or not the 'created with ADPT' notice should be displayed",
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "required": [
+        "fromYear"
+      ]
     }
   },
-  "lang": {
-    "description": "The document language (IANA subtag)",
-    "type": "string",
-    "default": "en"
-  },
-  "copyright": {
-    "description": "The document copyright notice",
-    "type": "object",
-    "properties": {
-      "fromYear": {
-        "description": "The starting year for the copyright notice",
-        "type": "number"
-      },
-      "toYear": {
-        "description": "The ending year for the copyright notice",
-        "type": "number"
-      },
-      "holder": {
-        "description": "The copyright holder",
-        "type": "string"
-      },
-      "text": {
-        "description": "The copyright main text. This text is treated as pure AsciiDoc",
-        "type": "string"
-      },
-      "adptNotice": {
-        "description": "Whether or not the 'created with ADPT' notice should be displayed",
-        "type": "boolean",
-        "default": true
-      }
-    },
-    "required": [
-      "fromYear"
-    ]
-  }
-},
-"required": [
-  "title",
-  "authors",
-  "copyright"
-]
+  "required": [
+    "title",
+    "authors",
+    "copyright"
+  ]
 }
