@@ -92,10 +92,41 @@
       "description": "The document language (IANA subtag)",
       "type": "string",
       "default": "en"
+    },
+    "copyright": {
+      "description": "The document copyright notice",
+      "type": "object",
+      "properties": {
+        "fromYear": {
+          "description": "The starting year for the copyright notice",
+          "type": "number"
+        },
+        "toYear": {
+          "description": "The ending year for the copyright notice",
+          "type": "number"
+        },
+        "holder": {
+          "description": "The copyright holder",
+          "type": "string"
+        },
+        "text": {
+          "description": "The copyright main text. This text is treated as pure AsciiDoc",
+          "type": "string"
+        },
+        "adptNotice": {
+          "description": "Whether or not the 'created with ADPT' notice should be displayed",
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "required": [
+        "fromYear"
+      ]
     }
   },
   "required": [
     "title",
-    "authors"
+    "authors",
+    "copyright"
   ]
 }
