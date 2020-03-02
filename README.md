@@ -18,5 +18,5 @@ improve the readability of the main schema and to apply the principle of <a
 href="https://en.wikipedia.org/wiki/Separation_of_concerns" target="_blank"
 rel="noopener noreferrer">Separation of Concerns</a>.
 
-- [The "Document" schema](document.schema.json)
-- [The "Author" schema](author.schema.json)
+- [The "Document" schema](schemas/document.schema.json)
+- [The "Author" schema](schemas/author.schema.json)

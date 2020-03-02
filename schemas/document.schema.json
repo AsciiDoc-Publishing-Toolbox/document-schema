@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://espositoandrea.github.io/adpt-document-schema/document.schema.json",
+  "$id": "https://espositoandrea.github.io/adpt-document-schema/schemas/document.schema.json",
   "title": "AsciiDoc Document",
   "description": "An AsciiDoc document to be converted by the AsciiDoc Publishing Toolbox",
   "type": "object",
@@ -22,7 +22,7 @@
       "description": "The authors of the document",
       "type": "array",
       "items": {
-        "$ref": "https://espositoandrea.github.io/adpt-document-schema/author.schema.json"
+        "$ref": "https://espositoandrea.github.io/adpt-document-schema/schemas/author.schema.json"
       },
       "uniqueItems": true
     },
