@@ -1,3 +1,8 @@
+title: ADPT Document Schema
+description: The schemas related to ADPT's Documents.
+
+show_downloads: true
+
 plugins:
   - jekyll-titles-from-headings
 
