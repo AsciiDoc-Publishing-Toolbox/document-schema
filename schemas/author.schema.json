@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://espositoandrea.github.io/adpt-document-schema/schemas/author.schema.json",
+    "$id": "https://asciidoc-publishing-toolbox.github.io/document-schema/schemas/author.schema.json",
     "title": "AsciiDoc Author",
     "description": "An Author as seen by the AsciiDoc Publishing Toolbox",
     "type": "object",
