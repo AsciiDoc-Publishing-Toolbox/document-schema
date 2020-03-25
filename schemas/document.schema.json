@@ -35,7 +35,7 @@
         "properties": {
           "number": {
             "description": "The version number",
-            "type": "string"
+            "type": ["integer", "string"]
           },
           "date": {
             "description": "The version date",
