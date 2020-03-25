@@ -35,7 +35,10 @@
         "properties": {
           "number": {
             "description": "The version number",
-            "type": ["integer", "string"]
+            "type": [
+              "integer",
+              "string"
+            ]
           },
           "date": {
             "description": "The version date",
@@ -108,6 +111,22 @@
       "required": [
         "fromYear"
       ]
+    },
+    "options": {
+      "description": "Variouos generation options",
+      "type": "object",
+      "properties": {
+        "revhistory": {
+          "description": "Should the revision history table be shown?",
+          "type": "boolean",
+          "default": false
+        },
+        "revhistoryLabel": {
+          "description": "The label of the revision history. Showed only if revishtory is true",
+          "type": "string",
+          "default": "Revision History"
+        }
+      }
     }
   },
   "required": [
