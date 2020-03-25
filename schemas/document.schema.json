@@ -44,6 +44,10 @@
           "note": {
             "description": "A note about the version",
             "type": "string"
+          },
+          "author": {
+            "description": "The author of the revision",
+            "type": "string"
           }
         },
         "required": [
