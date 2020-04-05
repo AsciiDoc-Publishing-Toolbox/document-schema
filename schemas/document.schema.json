@@ -125,6 +125,12 @@
           "description": "The label of the revision history. Showed only if revishtory is true",
           "type": "string",
           "default": "Revision History"
+        },
+        "target": {
+          "description": "The build target for this document",
+          "type": "string",
+          "enum": ["standalone", "github"],
+          "default": "standalone"
         }
       }
     }
